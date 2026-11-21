@@ -1,0 +1,7 @@
+/Testomatic
+obj/
+dist/
+*.hpkg
+*.AppImage
+.cosmoe/
+.haiku-headers/

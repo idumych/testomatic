@@ -1,0 +1,5 @@
+Testomatic gets RenkuOS onto a USB drive so you can try it on your computer.
+
+It lists the builds RenkuOS publishes, downloads the one you pick (the latest by default) and checks it against its published checksum, or takes an image file you already have. Then it writes the image to the USB drive you choose and offers to restart the computer, so you can boot from the drive.
+
+The whole job plays out on an animated construction site: a crane hoists steel while the image downloads and pours concrete while it is written.
