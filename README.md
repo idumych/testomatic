@@ -31,13 +31,22 @@ Native Haiku API, one source tree for Renku OS (`.hpkg`) and Linux through Hokku
 
 Only the latest download is kept; starting a different build deletes the older one.
 
+## Screenshots
+
+![Downloading a build on Haiku](docs/screenshots/haiku-download.png)
+Haiku R1/beta6: hoisting steel while build 95 downloads.
+
+![The site on Linux under Wayland](docs/screenshots/linux-wayland.png)
+Linux (the AppImage under Wayland, from CI): the latest build picked, waiting for a USB drive.
+
 ## Status
 
-| Check | Renku/Haiku | Linux (X11) |
+| Check | Renku/Haiku | Linux |
 |---|---|---|
-| Builds | type-checked against Haiku headers; not built or run yet | ran: real download of build 95, checksum verified, written to a test drive file byte for byte |
+| Download, checksum, write | ran on Haiku R1/beta6 x86_64 (QEMU): build 95 downloaded, verified, written to a test drive file byte for byte; arm64: Renku's arm64 image in QEMU | ran under X11 (Xvfb): the same; the CI AppImages start under X11 and Wayland on x86_64 and arm64 |
 | Writing to a real USB drive | not tested | not tested (pkexec path) |
 | Restart | not tested | not tested |
+| Renku OS x86_64 | not tested (the package is built on Haiku R1/beta6, which Renku installs) | |
 
 ## Licence
 
